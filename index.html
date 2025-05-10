@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio como Preparadora Física</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gradient-custom {
+            background: linear-gradient(to right, #6b7280, #374151); /* Gradiente personalizado */
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Sombra de texto personalizada */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-gray-800">María Banguera</a>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#inicio" class="text-gray-700 hover:text-blue-600 transition duration-300">Inicio</a></li>
+                        <li><a href="#acerca-de-mi" class="text-gray-700 hover:text-blue-600 transition duration-300">Acerca de Mí</a></li>
+                        <li><a href="#proyectos" class="text-gray-700 hover:text-blue-600 transition duration-300">Mis Proyectos</a></li>
+                        <li><a href="#habilidades" class="text-gray-700 hover:text-blue-600 transition duration-300">Habilidades</a></li>
+                        <li><a href="#contacto" class="text-gray-700 hover:text-blue-600 transition duration-300">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button id="hamburger-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Menú">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-white w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-gray-700 focus:outline-none" aria-label="Cerrar menú">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#inicio" class="block text-lg text-gray-700 hover:text-blue-600 transition duration-300">Inicio</a></li>
+                    <li><a href="#acerca-de-mi" class="block text-lg text-gray-700 hover:text-blue-600 transition duration-300">Acerca de Mí</a></li>
+                    <li><a href="#proyectos" class="block text-lg text-gray-700 hover:text-blue-600 transition duration-300">Mis Proyectos</a></li>
+                    <li><a href="#habilidades" class="block text-lg text-gray-700 hover:text-blue-600 transition duration-300">Habilidades</a></li>
+                    <li><a href="#contacto" class="block text-lg text-gray-700 hover:text-blue-600 transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="inicio" class="bg-gradient-custom py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-white mb-4 text-shadow-custom">Hola, soy María Banguera</h1>
+                <p class="text-xl text-gray-200 mb-8 text-shadow-custom">Preparadora Física y Entrenadora Deportiva</p>
+                <a href="#contacto" class="bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 font-semibold">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="acerca-de-mi" class="bg-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="entrenadora-afrodescendiente.jpg" alt="María Banguera, Entrenadora Física" class="rounded-lg shadow-lg w-full max-w-md">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Acerca de Mí</h2>
+                    <p class="text-gray-700 text-lg mb-6">
+                        Soy una apasionada Preparadora Física y Entrenadora Deportiva con experiencia en el diseño e implementación de programas de entrenamiento personalizados. Mi objetivo es ayudar a mis clientes a alcanzar su máximo potencial físico y mejorar su bienestar general.
+                    </p>
+                    <p class="text-gray-700 text-lg">
+                        Cuento con una sólida formación académica y experiencia práctica en el campo del entrenamiento deportivo, lo que me permite ofrecer un enfoque integral y basado en la ciencia para el desarrollo físico.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Mis Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">🏋️‍♂️ Entrenamiento de Fuerza Base para Adolescentes</h3>
+                    <p class="text-gray-700 mb-4">
+                        Descripción: Este proyecto consistió en el diseño de un programa de entrenamiento físico de fuerza base como actividad extracurricular para jóvenes de 14 a 16 años en la Institución Educativa Monseñor Víctor Wiedemann. Se estructuraron cuatro mesociclos consecutivos de 16 semanas, con tres sesiones semanales de 90 minutos, con el objetivo de garantizar un estímulo significativo para el desarrollo de la fuerza muscular en esta población escolar.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">⚽ Plan de Entrenamiento para Porteras de Fútbol</h3>
+                    <p class="text-gray-700 mb-4">
+                        Descripción: Este proyecto se centró en el diseño y aplicación de un plan de entrenamiento para mejorar la potencia en el tren inferior de las porteras de los clubes Atlético Nacional y Formas Íntimas, con edades de 12 a 14 años. Se realizó una evaluación inicial para caracterizar la población y establecer el nivel de entrenabilidad, seguido de una planificación específica para mejorar la potencia en los miembros inferiores, una capacidad condicional esencial para el rol de portera en el fútbol femenino.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">🧑‍🎓 Mejora de la Condición Física en Estudiantes de Secundaria</h3>
+                    <p class="text-gray-700 mb-4">
+                        Descripción: Este proyecto educativo se enfocó en estudiantes de entre 13 y 14 años, con el objetivo de que diseñaran y ejecutaran un plan de entrenamiento personalizado para mejorar su condición física. A través de la metodología de aprendizaje basado en proyectos, los estudiantes investigaron sobre la importancia de la actividad física, el deporte y el ejercicio en su salud y bienestar general, y trabajaron colaborativamente para implementar actividades físicas que mejoraran su resistencia, fuerza y flexibilidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="bg-white py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Áreas de Experiencia</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+                        <li>Biomecánica y análisis del movimiento</li>
+                        <li>Principios del entrenamiento deportivo (fuerza, resistencia, velocidad, flexibilidad)</li>
+                        <li>Nutrición y recuperación</li>
+                        <li>Evaluación física y funcional</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Habilidades Adicionales</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+                         <li>Diseño de programas de entrenamiento personalizados</li>
+                         <li>Entrenamiento de fuerza y acondicionamiento</li>
+                         <li>Planificación y periodización del entrenamiento</li>
+                         <li>Comunicación efectiva y motivación</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Contacto</h2>
+            <div class="text-center">
+                <p class="text-xl text-gray-700 mb-4">
+                    Puedes contactarme a través de mi correo electrónico:
+                </p>
+                <a href="mailto:mbanguera77@gmail.com" class="text-blue-600 hover:text-blue-800 text-xl transition duration-300 font-semibold">mbanguera77@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-gray-300">
+                © 2023 María Banguera. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+        function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
